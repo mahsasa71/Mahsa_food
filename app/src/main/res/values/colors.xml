@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="orange">#FF5722</color>
+    <color name="orange_dark">#E64A19</color>
+    <color name="blue">#4FC3F7</color>
+  <color name="zard">#FFEB3B</color>
+  <color name="purpule">#AB47BC</color>
+  <color name="green">#66BB6A</color>
+    <color name="gray_light">#676060</color>
+    <color name="soorati">#EC407A</color>
+    <color name="ghermez">#CF1813</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

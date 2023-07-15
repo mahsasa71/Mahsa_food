@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainScreen.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shapebackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:fontFamily="@font/primary_bold"
+                android:text="Mahsa food"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/dokmradd"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/baseline_add_circle_24"
+                app:tint="@color/white"
+                android:layout_gravity="end|center_vertical"
+                />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end|center_vertical"
+                app:srcCompat="@drawable/baseline_clear_all_24"
+                app:tint="@color/black"
+                android:id="@+id/btn_deletAll"
+                android:layout_marginEnd="50dp"
+                />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/backed"
+            android:drawableStart="@drawable/baseline_search_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:hint="find your food..."
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="12dp" />
+
+    </LinearLayout>
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/backgroundrandom"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="5dp"
+        android:layoutAnimation="@anim/recycler"
+        android:id="@+id/recyclermain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        />
+
+
+
+</LinearLayout>
